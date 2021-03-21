@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_small.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body onload="loadFooter()">
+    <div class="header">
+        <div class="nav-content">
+            <div>
+                <img class="logo" src="img/logo.png">
+            </div>
+            <nav class="nav-bar hide-mobile">
+                <a href="#">Start</a>
+                <a href="#recipes">Rezepte des Tages</a>
+                <a href="#cocktail">Cocktail des Tages </a>
+                <a href="../kochwelt/service/kontakt.html">Kontakt</a>
+
+            </nav>
+          <!-- Mobile Menu -->
+    <img onclick="showMenu()" class="burger-menu hide-element" src="img/icons/menu-4-64.png">
+    <div id="mobileMenu" class="menu-overlay hide-menu">
+        <div class="menu-overlay-title">Menu</div>
+        <hr class="hyphen">
+        <div onclick="closeMenu()" class="close">X</div>
+        <div class="menu-overlay-nav">
+            <div class="menu-overlay-nav-rows">
+                <a href="../kochwelt/index.html#recipes" onclick="closeMenu()">Start
+                    <img src="../kochwelt/img/icons/arrow-30-24.png">
+                </a>
+            </div>
+
+            <div class="menu-overlay-nav-rows">
+                <a onclick="closeMenu()" href="../kochwelt/index.html#recipes">Rezepte des Tages
+                    <img src="../kochwelt/img/icons/arrow-30-24.png">
+                </a>
+            </div>
+            <div class="menu-overlay-nav-rows">
+                <a href="../kochwelt/index.html#cocktail" onclick="closeMenu()">Cocktail des Tages
+                    <img src="../kochwelt/img/icons/arrow-30-24.png">
+                </a>
+            </div>
+
+            <div class="menu-overlay-nav-rows">
+                <a href="../kochwelt/service/kontakt.html" onclick="closeMenu()">Kontakt
+                    <img src="../kochwelt/img/icons/arrow-30-24.png">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile Menu End -->
+        </div>
+        <div class="slogan">
+            <h1>Mit uns kocht man einfach besser!</h1>
+        </div>
+
+    </div>
+    <div id="recipes" class="recipe-headline">
+        <h2>Rezepte des Tages</h2>
+    </div>
+    <div class="recipe-container">
+
+        <a href="../kochwelt/rezepte/flammenkuchen.html">
+            <div class="recipe-content">
+                <img class="recipe-container-img" src="img/Flammenkuchen.jpg">
+                <h3>Flammenkuchen</h3>
+                <p>Kleiner kulinarischer Ausflug direkt ins Elsass. Leckerer Flammenkuchen - schmeckt wie im Elsass.
+                </p>
+                <img class="recipe-icon hide-element" src="img/icons/arrow-31-24.png">
+            </div>
+        </a>
+        <a href="../kochwelt/rezepte/quinoasalat.html">
+            <div class="recipe-content">
+                <img class="recipe-container-img" src="img/quinoa1.jpg">
+                <h3>Quinoa Salat</h3>
+                <p>Der Quinoa-Salat sollte auf keinem Speiseplan fehlen! Er steigert die Ausschüttung des Glückshormons
+                    Serotonin, hält lange satt und eignet sich prima zum Mitnehmen, ob ins Büro oder auf die
+                    Picknickdecke. </p>
+                <img class="recipe-icon hide-element" src="img/icons/arrow-31-24.png">
+            </div>
+        </a>
+        <a href="../kochwelt/rezepte/currychicken.html">
+            <div class="recipe-content">
+                <img class="recipe-container-img" src="img/currychicken.jpg">
+                <h3>Curry Hühnchen mit Reis</h3>
+                <p>Der traditionelles Geschmack aus Fernost, ein Genuss für den Gaumen.</p>
+                <img class="recipe-icon hide-element" src="img/icons/arrow-31-24.png">
+            </div>
+        </a>
+    </div>
+    <div id="cocktail" class="tips">
+        <h2>Cocktail des Tages</h2>
+        <div class="cocktail-content">
+
+            <div class="cocktail-text">
+                <h3>Sex on the Beach</h3>
+                <p>Ein Barkeeper aus Florida mixte bei einem Wettbewerb Wodka, Pfirsichlikör, Grenadine und die
+                    verschiedenen Fruchtsäften miteinander und nannte seine fruchtige Kreation Sex on the Beach. Auf den
+                    Namen kam er weil es an den Stränden Floridas besonders wild zuging. Die jungen, partywütigen
+                    Strandbesucher waren von dem süßen Mixgetränk begeistert.
+                </p>
+            </div>
+
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fvpo8QP_KIU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <img class="hide-mobile" src="img/cocktail.png">
+        </div>
+
+
+    </div>
+  <!-- Footer Start-->
+  <div class="footer">
+    <div class="social-icons">
+        <img src="img/instagram-4-64.png" alt="">
+        <img src="img/facebook-4-64.png" alt="">
+        <img src="img/youtube-4-64.png" alt="">
+    </div>
+<div class="logo-small">
+    <img src="img/logo_small.png">
+</div>
+<div class="legal-info">
+    <a href="service/impressum.html">Impressum</a>
+    <a href="service/datenschutz.html">Datenschutz</a>
+</div>
+</div>
+</body>
+
+</html>

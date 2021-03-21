@@ -1,0 +1,455 @@
+/* CSS für Rezepte */
+
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 1.1em;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.header2 {
+    background-image: url(../img/mediteran.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 180px;
+}
+
+.logo {
+    filter: invert();
+    width: 80%;
+    
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 18px;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.food-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 0px rgb(229, 226, 226);
+}
+
+.content {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+}
+
+.boxgray {
+    background-color: rgb(229, 226, 226);
+    border-radius: 5px;
+    padding: 6px;
+    width: fit-content;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boxgray img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hyphen {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-color: rgb(229, 226, 226);
+    border-left-width: 0px;
+}
+
+.portion-calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.portion-calc-input {
+    border-radius: 8px 0 0 8px;
+    border: 1px solid rgb(229, 226, 226);
+    padding-top: 9px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.portion-calc-input:focus {
+    outline: none;
+}
+
+.portion-calc-btn {
+    background-color: #008000;
+    border-radius: 0 8px 8px 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.ingredients-box-container {
+    box-shadow: 0px 0px 10px 0px rgb(229, 226, 226);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ingredients-container {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ingredients-rows {
+    display: flex;
+}
+
+.ingredients-row-1 {
+    background-color: rgb(229, 226, 226);
+    border-radius: 8px 0 0 8px;
+    padding-left: 30px;
+    /* padding-right: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: right;
+}
+
+.ingredients-row-11 {
+    background-color: rgb(229, 226, 226);
+    border-radius: 0 8px 8px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+.ingredients-row-2 {
+    padding-left: 30px;
+    /* padding-right: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: right;
+}
+
+.ingredients-row-21 {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+.ingredients-row-3 {
+    padding-left: 20px;
+    padding-right: 10px;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+h2 {
+    margin-bottom: 0;
+}
+
+.preparation-container {
+    box-shadow: 0px 0px 10px 0px rgb(229, 226, 226);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.preperation-points-container img {
+    width: 50px;
+}
+
+.preperation-points-container tr {
+    display: flex;
+}
+
+.preperation-points-container td {
+    padding: 10px;
+}
+
+.time-boxes {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.created-container {
+    padding-top: 20px;
+}
+
+.created {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.created img {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+}
+
+.footer {
+    height: 240px;
+    background-image: url(../img/mediteran.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    padding-top: 20px;
+}
+
+.social-icons img {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.logo-small {
+    padding: 20px;
+}
+
+.logo-small img {
+    height: 64px;
+    width: 64px;
+    filter: invert(1);
+}
+
+.legal-info a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* mobile menu */
+
+.hide-menu {
+    display: none !important;
+}
+
+.legal-info a:hover {
+    text-decoration: underline;
+}
+.hide-element {
+    display: none;
+}
+/* for smartphones only*/
+
+@media(max-width: 1022px) {
+    .hide-mobile {
+        display: none
+    }
+    .hide-element {
+        display: unset;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .ingredients-container {
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .time-boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .boxgray-mobile {
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .preparation-container {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .preperation-points-container tr {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .footer {
+        height: unset;
+        background-size: unset;
+        padding-bottom: 20px;
+    }
+    .legal-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .legal-info a {
+        font-size: 1em;
+    }
+    .header2 {
+        height: unset;
+        background-size: unset;
+        height: 20vh;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .logo img {
+        width: 90%;
+    }
+
+
+    /* Mobile Menu */
+    .logo {
+        width: 90%;
+    }
+    .burger-menu {
+        filter: invert(1);
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 40px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        animation: 225ms fadeIn ease-in-out;
+        border-bottom: 1px solid grey;
+        z-index: 99;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .menu-overlay-title {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .hyphen {
+        width: 100%;
+        border-bottom-width: 2px;
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-color: black;
+    }
+    .menu-overlay-nav {
+        padding-top: 40px;
+        /* padding-left: 40px;   */
+        display: flex;
+        flex-direction: column;
+        color: black;
+    }
+    .menu-overlay a {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
+    .menu-overlay-nav img {
+        width: 22px;
+        object-fit: cover;
+        padding-right: 10px;
+    }
+    .menu-overlay-nav-rows {
+       
+        border-bottom: 1px solid black;
+        width: 97%;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* for tablets */
+
+@media(max-width: 1151px) {
+    .nav-content a {
+        font-size: 1.2em;
+        margin-right: 18px;
+    }
+    .slogan {
+        padding-top: unset;
+    }
+}

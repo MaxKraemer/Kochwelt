@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quinoa Salat</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo_small.png">
+    <script src="../script.js"></script>
+</head>
+
+
+
+<body onload="loadHeader(), loadFooter(), calculate(1)">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <div class="content">
+
+        <h1 class="text-center">Quinoa Salat</h1>
+        <img class="food-img" src="../img/quinoa1.jpg" alt="Flammenkuchen">
+
+        <div class="boxes">
+            <div class="boxgray">
+                <img src="../img/icons/clock-regular.svg">
+                <div>25 Min.</div>
+            </div>
+            <div class="boxgray">
+                <img src="../img/icons/brain-solid.svg">einfach
+            </div>
+            <div class="boxgray">
+                <img src="../img/icons/calendar-alt-regular.svg">03.03.2021
+            </div>
+        </div>
+
+
+
+
+        <!-- Ingredients -->
+        <div class="ingredients-box-container">
+            <h2 class="text-center">Zutaten</h2>
+            <!-- calculation -->
+
+            <div class="portion-calc text-center">
+                <span>Für</span>
+                <input type="number" min="1" value="1" id="input" class="portion-calc-input text-center"
+                    placeholder="1">
+                <div class="portion-calc-btn" onClick="buttonCalc()">Portionen</div>
+
+            </div>
+            <hr class="hyphen">
+
+            <div class="ingredients-container">
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="quinoa"></span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Quinoa</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="vegStock"></span>ml&nbsp;</div>
+                    <div class="ingredients-row-21"> Gemüsebrühe</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="corn"></span>&nbsp;</div>
+                    <div class="ingredients-row-11"> Dose(n) Mais</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="cucumber"></span>&nbsp;</div>
+                    <div class="ingredients-row-21"> Gurke(n)</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="onion"></span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Zwiebeln</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="pepper"></span>&nbsp;</div>
+                    <div class="ingredients-row-21"> kleine Paprika</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="feta"></span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Feta Käse</div>
+                </div>
+                <div class="ingredients-rows">
+
+                    <div class="ingredients-row-3"> <b>Für das Dressing:</b> </div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="yogurt"></span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Jogurt</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="mustard">25</span>&nbsp;EL&nbsp;</div>
+                    <div class="ingredients-row-21">Senf</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="oil">25</span>&nbsp;EL&nbsp;</div>
+                    <div class="ingredients-row-11">Olivenöl</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="vinegar"></span>&nbsp;EL&nbsp;</div>
+                    <div class="ingredients-row-21">Balsamico Essig</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preparation  -->
+
+        <div class="preparation-container">
+            <h2 class="text-center">Zubereitung</h2>
+            <div class="time-boxes">
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Vorbereitung ca. 10 Min.</div>
+                </div>
+
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Ruhezeit ca.30 Min.</div>
+                </div>
+
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Gesamtzeit ca.60 Min.</div>
+                </div>
+            </div>
+
+            <table class="preperation-points-container">
+                <tr>
+                    <td> <img src="../img/icons/1-64.png"></td>
+                    <td class="table-text"> Quinoa in ein Sieb geben und unter heißem Wasser gründlich
+                        abwaschen. Quinoa zusammen mit der Gemüsebrühe in einen Topf geben und aufkochen.
+                        Nach kurzem Aufkochen den Quinoa für ca. 20 Min auf niedriger Stufeköcheln lassen, bis
+                        das Wasser vollständig aufgesogen ist.
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/2-64.png"></td>
+                    <td class="table-text">Währenddessen Zwiebel und Gurke schälen, Zwiebeln in Ringe und Gurke
+                        in Würfel schneiden. Paprika waschen und ebenfalls in Würfel schneiden und alles zusammen
+                        in eine Schüssel geben. Nun noch den Mais hinzugeben!
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/3-64.png"></td>
+                    <td class="table-text">Den fertigen Quinoa mit in die schüssel geben.</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/4-64.png"></td>
+                    <td class="table-text">Für das Dressing Jogurt, Senf, Essig und Olivenöl in einer
+                        kleinen Schüssel oder einem Messbecher verrühren und nach belieben mit Salz und
+                        Pfeffer abschmecken. Anschließend in die Salatschüssel mischen. <br>
+                        Nun den Salat noch auf einem Teller anrichten und den Feta-Käse über den Salat bröseln.
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="created-container">
+            <h3 class="text-center">Rezept erstellt von</h3>
+            <div class="created">
+                <img src="../img/fabi.jpg">
+                <div>Fabi</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+</body>
+
+</html>

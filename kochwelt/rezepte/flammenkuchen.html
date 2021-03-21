@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flammenkuchen</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/logo_small.png">
+    <script src="../script.js"></script>
+</head>
+
+
+<body onload="loadHeader(), loadFooter()">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <h1 class="text-center">Flammenkuchen</h1>
+        <img class="food-img" src="../img/Flammenkuchen.jpg" alt="Flammenkuchen">
+
+        <div class="boxes">
+            <div class="boxgray">
+                <img src="../img/icons/clock-regular.svg">
+                <div>60 Min.</div>
+            </div>
+            <div class="boxgray">
+                <img src="../img/icons/brain-solid.svg">mittel
+            </div>
+            <div class="boxgray">
+                <img src="../img/icons/calendar-alt-regular.svg">01.02.2021
+            </div>
+        </div>
+
+
+
+
+        <!-- Ingredients -->
+        <div class="ingredients-box-container">
+            <h2 class="text-center">Zutaten</h2>
+            <!-- calculation -->
+
+            <div class="portion-calc text-center">
+                <span>Für</span>
+                <input type="number" min="1" id="input" class="portion-calc-input text-center" value="1">
+                <div class="portion-calc-btn" onClick="calcFlame()">Portionen</div>
+
+            </div>
+            <hr class="hyphen">
+
+            <div class="ingredients-container">
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="amount0">250</span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Mehl</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="amount1">2</span>&nbsp; EL&nbsp;</div>
+                    <div class="ingredients-row-21">Öl</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="amount2">120</span>ml&nbsp;</div>
+                    <div class="ingredients-row-11">Wasser</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="amount3">200</span>g&nbsp;</div>
+                    <div class="ingredients-row-21">Schmand</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="amount4">200</span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Zwiebeln</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-2"><span id="amount5">150</span>g&nbsp;</div>
+                    <div class="ingredients-row-21">Speck</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div class="ingredients-row-1"><span id="amount6">100</span>g&nbsp;</div>
+                    <div class="ingredients-row-11">geriebener Käse (optional)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preparation  -->
+
+        <div class="preparation-container">
+            <h2 class="text-center">Zubereitung</h2>
+            <div class="time-boxes">
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Vorbereitung ca. 10 Min.</div>
+                </div>
+
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Ruhezeit ca.30 Min.</div>
+                </div>
+
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Gesamtzeit ca.60 Min.</div>
+                </div>
+            </div>
+
+            <table class="preperation-points-container">
+                <tr>
+                    <td> <img src="../img/icons/1-64.png"></td>
+                    <td class="table-text"> Aus Mehl, Salz, Öl und Wasser einen Teig herstellen.
+                        Den Teig solange kneten, bis dieser nicht mehr an den
+                        Händen kleben bleibt, ansonsten noch etwas Mehl unterarbeiten. Mindestens 30 Minuten ruhen
+                        lassen.</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/2-64.png"></td>
+                    <td class="table-text">Den Schmand glatt rühren und gerne mit etwas Salz und Pfeffer
+                        würzen. Die Zwiebel halbieren und in dünne
+                        Streifen schneiden. Den Speck in Streifen schneiden.</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/3-64.png"></td>
+                    <td class="table-text">Den Teig nun auf einer mit Mehl bestäubten Arbeitsfläche mit
+                        dem Nudelholz schön dünn ausrollen und auf ein
+                        Backblech geben. Jetzt mit Schmand bestreichen darauf verteilen und mit dem Speck bestreuen.
+                        Nach
+                        belieben mit Käse bestreuen.</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/4-64.png"></td>
+                    <td class="table-text">Im vorgeheizten Ofen bei mindestens 200 °C ca. 20 Minuten
+                        backen.</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="created-container">
+            <h3 class="text-center">Rezept erstellt von</h3>
+            <div class="created">
+                <img src="../img/feli.jpg">
+                <div>Feli</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+</body>
+
+</html>

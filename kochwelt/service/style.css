@@ -1,0 +1,377 @@
+/* CSS für service */
+
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 1.1em;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.header2 {
+    background-image: url(../img/mediteran.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 180px;
+}
+
+.logo {
+    filter: invert();
+    width: 80%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 18px;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+a {
+    color: green;
+}
+
+.mail-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+
+}
+.mail-box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-list textarea {
+    height: 200px;
+    width: 400px;
+    padding-bottom: 30px;
+}
+
+.contact-list input {
+    height: 20px;
+
+}
+
+.contact-list label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact-list form{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.button{
+    padding-top: 30px;
+}
+
+button {
+    background-color: #008000;
+    border-radius:  8px 8px ;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Raleway';
+}
+
+textarea {
+
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 8px 8px;
+    
+}
+
+input {
+
+    border-radius:  8px 8px ;
+}
+
+.footer {
+    height: 240px;
+    background-image: url(../img/mediteran.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    padding-top: 20px;
+}
+
+.social-icons img {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.logo-small {
+    padding: 20px;
+}
+
+.logo-small img {
+    height: 64px;
+    width: 64px;
+    filter: invert(1);
+}
+
+.legal-info a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.legal-info a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: green;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* mobile menu */
+
+.hide-menu {
+    display: none !important;
+}
+.hide-element {
+    display: none;
+}
+/* for smartphones only*/
+
+@media(max-width: 1022px) {
+    .hide-mobile {
+        display: none
+    }
+    .hide-element {
+        display: unset;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .mail-container{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .ingredients-container {
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .time-boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .boxgray-mobile {
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .preparation-container {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .preperation-points-container tr {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .footer {
+        height: unset;
+        background-size: unset;
+        padding-bottom: 20px;
+    }
+    .legal-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .legal-info a {
+        font-size: 1em;
+    }
+    .header2 {
+        height: unset;
+        background-size: unset;
+        height: 20vh;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .logo img {
+        width: 90%;
+    }
+    /* Mobile Menu */
+    .logo {
+        width: 90%;
+    }
+    .burger-menu {
+        filter: invert(1);
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 40px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        animation: 225ms fadeIn ease-in-out;
+        border-bottom: 1px solid grey;
+        z-index: 99;
+    }
+
+    .contact-list input{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .contact-list textarea {
+
+        width: 320px;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .menu-overlay-title {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .hyphen {
+        width: 100%;
+        border-bottom-width: 2px;
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-color: black;
+    }
+    .menu-overlay-nav {
+        padding-top: 40px;
+        /* padding-left: 40px;   */
+        display: flex;
+        flex-direction: column;
+        color: black;
+    }
+    .menu-overlay a {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-overlay-nav img {
+        width: 22px;
+        object-fit: cover;
+        padding-right: 10px;
+    }
+    .menu-overlay-nav-rows {
+        border-bottom: 1px solid black;
+        width: 97%;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* for tablets */
+
+@media(max-width: 1151px) {
+    .nav-content a {
+        font-size: 1.2em;
+        margin-right: 18px;
+    }
+    .slogan {
+        padding-top: unset;
+    }
+}

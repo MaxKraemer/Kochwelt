@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/logo_small.png">
+    <script src="../script.js"></script>
+
+    <title>Rezept</title>
+</head>
+
+
+
+
+<body onload="loadHeader(), loadFooter()">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <div class="content">
+
+        <h1 class="text-center">Curry Hühnchen mit Reis</h1>
+        <img class="food-img" src="../img/currychicken.jpg" alt="currychicken">
+
+        <div class="boxes">
+            <div class="boxgray">
+                <img src="../img/icons/clock-regular.svg">
+                <div>60 Min.</div>
+            </div>
+            <div class="boxgray">
+                <img src="../img/icons/brain-solid.svg">mittel
+            </div>
+            <div class="boxgray">
+                <img src="../img/icons/calendar-alt-regular.svg">01.02.2021
+            </div>
+        </div>
+
+
+
+
+        <!-- Ingredients -->
+        <div class="ingredients-box-container">
+            <h2 class="text-center">Zutaten</h2>
+            <!-- calculation -->
+
+            <div class="portion-calc text-center">
+                <span>Für</span>
+                <input type="number" min="1" value="1" id="input" class="portion-calc-input text-center"
+                    placeholder="1">
+                <div class="portion-calc-btn" onClick="calculateChicken()">Portionen</div>
+
+            </div>
+            <hr class="hyphen">
+
+            <div class="ingredients-container">
+                <div class="ingredients-rows">
+                    <div  class="ingredients-row-1"><span id="chicken">75</span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Hähnchenbrust</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div  class="ingredients-row-2"><span id="cocos">1</span>&nbsp;EL&nbsp;</div>
+                    <div class="ingredients-row-21">Kokosöl</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div  class="ingredients-row-1"><span id="cocosmilk">100</span>ml&nbsp;</div>
+                    <div class="ingredients-row-11">Kokosmilch</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div id="curry" class="ingredients-row-2"><span id="curry">1</span>&nbsp;EL&nbsp;</div>
+                    <div class="ingredients-row-21">Rote Currypaste</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div  class="ingredients-row-1"><span id="garlic">1/2</span>&nbsp;</div>
+                    <div class="ingredients-row-11">Knoblauchzehe</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div  class="ingredients-row-2"><span id="broccoli">75</span>g&nbsp;</div>
+                    <div class="ingredients-row-21">Brokkoli</div>
+                </div>
+                <div class="ingredients-rows">
+                    <div  class="ingredients-row-1"><span id="rice">125</span>g&nbsp;</div>
+                    <div class="ingredients-row-11">Reis (nach Wahl)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preparation  -->
+
+        <div class="preparation-container">
+            <h2 class="text-center">Zubereitung</h2>
+            <div class="time-boxes">
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Vorbereitung ca. 10 Min.</div>
+                </div>
+
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Ruhezeit ca.30 Min.</div>
+                </div>
+
+                <div class="boxgray boxgray-mobile">
+                    <img src="../img/icons/clock-regular.svg">
+                    <div>Gesamtzeit ca.60 Min.</div>
+                </div>
+            </div>
+
+            <table class="preperation-points-container">
+                <tr>
+                    <td> <img src="../img/icons/1-64.png"></td>
+                    <td class="table-text"> Hähnchenbrustfilet in große mundgerechte Würfel schneiden. Zwiebel und
+                        Knoblauch schälen und fein hacken.</td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/2-64.png"></td>
+                    <td class="table-text">Kokosöl in einer großen Pfanne erhitzen. Filet salzen, dann von allen Seiten
+                        circa 10 Minuten braten, dabei regelmäßig wenden. Zwiebel und Knoblauch hinzufügen und weitere
+                        2-3 Minuten garen. </td>
+                </tr>
+                <tr>
+                    <td><img src="../img/icons/3-64.png"></td>
+                    <td class="table-text">Kokosmilch, Currypaste und Limettensaft in die Pfanne geben. 5-10 Minuten
+                        einköcheln lassen, dann mit Salz und Pfeffer abschmecken. Mit Reis servieren.</td>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <div class="created-container">
+            <h3 class="text-center">Rezept erstellt von</h3>
+            <div class="created">
+                <img src="../img/max.jpg">
+                <div>Max</div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+   <!-- Footer -->
+   <div id="footer-container"></div>
+
+
+
+</body>
+
+</html>

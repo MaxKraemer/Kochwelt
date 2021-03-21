@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/logo_small.png">
+    <script src="../script.js"></script>
+</head>
+
+<body onload="loadHeader(), loadFooter()">
+
+    <div id="header-container"></div>
+
+    <div class="content">
+        <div class="contact">
+
+            <h1>Kontaktformular</h1>
+            <p>Wenn Du Lust hast, mit uns per Email in Kontakt zu treten, nutze einfach unser Kontaktformular.
+                <br>Gerne werden wir uns so schnell wie möglich bei dir zurückmelden.
+            </p>
+
+            <div class="contact-list">
+                <form action="http://gruppe-57.developerakademie.com/kochwelt/service/send_mail.php" method="POST">
+                    <label>Name:</label>
+                    <input name="name" type="text" size="30" placeholder="Ihr Name">
+                    <label>Email:</label>
+                    <input name="email" type="text" size="30" placeholder="Ihre Email-Adresse">
+                    <label>Deine Nachricht:</label>
+                    <textarea name="message" placeholder="Ihre Nachricht an uns"></textarea>
+
+                    <div class="button">
+                        <button type="submit">Senden</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div id="footer-container"></div>
+
+</body>
+
+</html>
